@@ -1,7 +1,5 @@
 # 👨‍💻 Personal Website & Portfolio
 
-[![GitHub Pages Status](https://github.com/irfanari969/irfanari969.github.io/actions/workflows/github-pages/github-pages-publish.yml/badge.svg)](https://github.com/irfanari969/irfanari969.github.io/actions/workflows/github-pages/github-pages-publish.yml)
-
 Welcome to the source code repository for my personal website and portfolio, which is hosted using GitHub Pages.
 
 **🚀 Live Site:** [https://irfanari969.github.io/](https://irfanari969.github.io/)
