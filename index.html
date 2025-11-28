@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniMyWebsite..</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" /> 
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header id="header">
+        <div class="container">
+            <div class="profile-text">
+                <h1>🌟 Hi, I'm Irfan Arianto.</h1>
+                <h2 id="typingText" class="typing-text"></h2>
+                <p>
+                    Combining precision in <em>video editing</em> with system architecture logic. 
+                    Currently focused on building **scalable, secure, and efficient REST APIs** using Node.js & SQL.
+                </p>
+                <div class="social-links">
+                    <a href="https://github.com/irfanari969" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://linkedin.com/in/irfanari" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="mailto:irfanari969@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-item clickable" id="projectsBtn">
+                        <div class="stat-number" data-target="7">0</div> 
+                        <div class="stat-label">Projects Completed <i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="stat-item clickable" id="techBtn">
+                        <div class="stat-number" data-target="8">0</div> 
+                        <div class="stat-label">Technologies Mastered <i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Code Quality %</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal" id="techModal">
+        <div class="modal-content">
+            <span class="close" id="closeTech">&times;</span>
+            <h2><i class="fas fa-code"></i> Technologies I've Mastered</h2>
+            <div class="tech-grid">
+                <div class="tech-card"><i class="fab fa-node-js"></i>
+                    <h4>Node.js</h4>
+                    <p>Runtime environment for JavaScript backend</p>
+                </div>
+                <div class="tech-card"><i class="fas fa-server"></i>
+                    <h4>Express.js</h4>
+                    <p>Minimal & flexible web framework</p>
+                </div>
+                <div class="tech-card"><i class="fas fa-database"></i>
+                    <h4>MySQL</h4>
+                    <p>Relational database management system</p>
+                </div>
+                <div class="tech-card"><i class="fab fa-js"></i>
+                    <h4>JavaScript (ES6+)</h4>
+                    <p>Modern JavaScript for backend development</p>
+                </div>
+                <div class="tech-card"><i class="fas fa-project-diagram"></i>
+                    <h4>REST API</h4>
+                    <p>RESTful API design & implementation</p>
+                </div>
+                <div class="tech-card"><i class="fas fa-shield-alt"></i>
+                    <h4>JWT & Auth</h4>
+                    <p>Authentication & authorization systems</p>
+                </div>
+                <div class="tech-card"><i class="fab fa-git-alt"></i>
+                    <h4>Git & GitHub</h4>
+                    <p>Version control & collaboration</p>
+                </div>
+                <div class="tech-card"><i class="fas fa-layer-group"></i>
+                    <h4>MVC Architecture</h4>
+                    <p>Clean code architecture pattern</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="projectsModal">
+        <div class="modal-content">
+            <span class="close" id="closeProjects">&times;</span>
+            <h2><i class="fas fa-folder-open"></i> Completed Projects</h2>
+            <div class="projects-list">
+                <div class="project-item">
+                    <div class="project-number">01</div>
+                    <div class="project-info"><h4>🎓 EduCourse API Advanced</h4>
+                        <p>A backend online course management system with 11 relational tables</p>
+                        <span class="project-tech">Node.js • Express • MySQL • MVC</span>
+                    </div><a href="https://github.com/irfanari969/educourse-api-adv" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-item"><div class="project-number">02</div>
+                <div class="project-info"><h4>✅ Fullstack Task Manager</h4>
+                    <p>A task management application that allows for real-time CRUD operations</p>
+                    <span class="project-tech">JavaScript • REST API • MySQL</span>
+                </div><a href="https://github.com/irfanari969/to-do-list-apps" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+            </div>
+                <div class="project-item"><div class="project-number">03</div>
+                <div class="project-info"><h4>🎓 EduCourse Platform</h4>
+                    <p>Front-end platform for online learning courses</p>
+                    <span class="project-tech">HTML • CSS</span>
+                </div><a href="https://github.com/irfanari969/test-website-videobelajar" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+            </div>
+                <div class="project-item"><div class="project-number">04</div>
+                <div class="project-info"><h4>🎓 EduCourse API</h4>
+                    <p>CRUD-based RESTful API for online course platforms</p>
+                    <span class="project-tech">Express • MySQL • REST API</span>
+                </div><a href="https://github.com/irfanari969/edu-course-api" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+            </div>
+                <div class="project-item"><div class="project-number">05</div>
+                <div class="project-info"><h4>🖼️ Deep Learning: CIFAR-10 Image Classification</h4>
+                    <p>CNN is used to classify images from the CIFAR-10 dataset</p>
+                    <span class="project-tech">Python • TensorFlow • Keras</span>
+                </div><a href="https://github.com/irfanari969/cifar10-cnn-classification" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+            </div>
+                <div class="project-item"><div class="project-number">06</div>
+                <div class="project-info"><h4>📚 ML Basics: Supervised & Unsupervised</h4>
+                    <p>Basic Machine Learning Models</p>
+                    <span class="project-tech">Python • sklearn</span>
+                </div><a href="https://github.com/irfanari969/ml-supervised-unsupervised-basics" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+            </div>
+                <div class="project-item"><div class="project-number">07</div>
+                <div class="project-info"><h4>🌸 Iris Classification Project (K-Nearest Neighbors)</h4>
+                    <p>KNN: Multi-Class Classification of the Iris Dataset</p>
+                    <span class="project-tech">Python • sklearn • Pandas • NumPy</span>
+                </div><a href="https://github.com/irfanari969/knn-on-iris" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="projects">
+        <div class="container">
+            <h3 class="section-title" id="projectTitle">Featured Projects</h3>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h4>🎓 EduCourse API Advanced</h4>
+                    <div class="tags">
+                        <span>Node.js</span><span>Express</span><span>MySQL</span><span>MVC</span>
+                    </div>
+                    <p>
+                        Comprehensive backend system for online course management platforms. 
+                        Designed to handle complex relational data structures (11 tables) with high efficiency.
+                    </p>
+                    <ul>
+                        <li>✅ Manual implementation of **Complex SQL JOINs** in the Model.</li>
+                        <li>✅ Strict **MVC** architecture for code maintainability.</li>
+                        <li>✅ Data validation and database security.</li>
+                    </ul>
+                    <a href="https://github.com/irfanari969/educourse-api-adv" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h4>✅ Fullstack Task Manager</h4>
+                    <div class="tags">
+                        <span>JavaScript</span><span>REST API</span><span>MySQL</span><span>Fullstack</span>
+                    </div>
+                    <p>
+                        Transformation of task management applications from static to **dynamic full-stack** systems. 
+                        Integrating complex frontend logic with database persistence.
+                    </p>
+                    <ul>
+                        <li>✅ **Real-time CRUD:** UI and Database Synchronization.</li>
+                        <li>✅ **Smart Logic:** Automatic notification algorithm for due tasks.</li>
+                        <li>✅ **Data Persistence:** Data is securely stored in MySQL.</li>
+                    </ul>
+                    <a href="https://github.com/irfanari969/to-do-list-apps" class="btn-code" target="_blank">View Code <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            </div>
+    </section>
+    
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Irfan Ari. Built with logic & creativity.</p>
+    </footer>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
